@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace必须指向Dao接口 -->
+<mapper namespace="com.ge.dao.StudentMapper">
+    <select id="findAll" resultType="com.ge.domain.Student">
+        SELECT stu_no,stu_name,stu_sex ,stu_age ,grade ,class_no FROM student;
+    </select>
+</mapper>
